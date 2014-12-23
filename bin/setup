@@ -1,0 +1,15 @@
+#!/bin/bash -eu
+
+case "$1" in
+  -v|--version)
+    version="$2"
+esac
+
+# Copy the version specific files up to php directory
+shopt -s dotglob
+
+mkdir -p $OPENSHIFT_ZABBIX_AGENT_DIR/configuration/etc/
+mkdir $OPENSHIFT_ZABBIX_AGENT_DIR/run
+mkdir $OPENSHIFT_ZABBIX_AGENT_DIR/log
+# cp -Hr $OPENSHIFT_ZABBIX_AGENT_DIR/versions/shared/configuration/etc/* $OPENSHIFT_ZABBIX_AGENT_DIR/configuration/etc/
+
