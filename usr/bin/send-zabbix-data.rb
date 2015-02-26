@@ -9,11 +9,11 @@ require 'optparse'
 # these will simply be ignored
 ZABBIX_SERVER  = ENV['ZABBIX_SERVER_IP']
 ZABBIX_PORT    = ENV['ZABBIX_SERVER_PORT']
-ZABBIX_SENDER  = ENV['OPENSHIFT_ZABBIX_AGENT_DIR'] + '/bin/zabbix_sender'
+ZABBIX_SENDER  = 'zabbix_sender'
 ZABBIX_RUN_DIR = ENV['OPENSHIFT_ZABBIX_AGENT_DIR'] + '/run'
 
 def get_quota_data
-  res = nil
+  res = Hash.new()
 
   %x[ quota -vw ].lines.each do |l|
     next unless l.start_with?('/')

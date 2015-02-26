@@ -6,15 +6,18 @@ Description: Zabbix Agent - agent of zabbix monitoring server
 Version: "2.0.8"
 Source-Url: https://github.com/vmirrow/os-zabbix-agent-cartridge.git
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: a13m
+Cartridge-Vendor: mirrow
 Categories:
-  - embedded
+  - plugin
 Provides:
   - zabbix_agent
+Requires:   
+  - cron
 GroupOverrides:
   - components:
     - web_framework
     - zabbix_agent
+    - cron
 Subscribes:
   set-env:
     Type: ENV:*
