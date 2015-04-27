@@ -15,8 +15,8 @@ Categories:
 Provides:
   - zabbix_agent
   - zabbix_agent-2.0.8
-#Requires:   
-#  - cron
+Requires:   
+  - cron
 Publishes:
 Subscribes:
 GroupOverrides:
