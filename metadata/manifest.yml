@@ -23,6 +23,7 @@ GroupOverrides:
     - zabbix_agent-2.0.8
     - web_framework
     - web_proxy
+    - cron
 Subscribes:
   set-env:
     Type: ENV:*
