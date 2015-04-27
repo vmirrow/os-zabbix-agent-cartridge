@@ -20,7 +20,6 @@ GroupOverrides:
   - components:
     - zabbix_agent-2.0.8
     - web_framework
-    - cron
 Subscribes:
   set-env:
     Type: ENV:*
