@@ -17,6 +17,9 @@ Provides:
   - zabbix_agent-2.0.8
 Requires:   
   - cron
+Scaling:
+  Min: 1
+  Max: 1
 GroupOverrides:
   - components:
     - zabbix_agent-2.0.8
@@ -25,7 +28,4 @@ Subscribes:
   set-env:
     Type: ENV:*
     Required: false
-Scaling:
-  Min: 1
-  Max: 1
 
