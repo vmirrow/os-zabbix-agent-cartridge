@@ -10,12 +10,13 @@ Cartridge-Vendor: mirrow
 License: Apache
 Categories:
   - embedded
+  - plugin
 Provides:
   - scheduler-service
   - zabbix_agent
   - zabbix_agent-2.0.8
-#Requires:   
-#  - cron
+Requires:   
+  - cron
 GroupOverrides:
   - components:
     - zabbix_agent-2.0.8
@@ -26,5 +27,5 @@ Subscribes:
     Required: false
 Scaling:
   Min: 1
-  Max: -1
+  Max: 1
 
