@@ -11,21 +11,19 @@ License: Apache
 Categories:
   - embedded
   - plugin
+  - zabbix
 Provides:
-  - scheduler-service
   - zabbix_agent
   - zabbix_agent-2.0.8
-Requires:   
-  - cron
-Scaling:
-  Min: 1
-  Max: 1
+#Requires:   
+#  - cron
+Publishes:
+Subscribes:
 GroupOverrides:
   - components:
-    - zabbix_agent-2.0.8
     - web_framework
-Subscribes:
-  set-env:
-    Type: ENV:*
-    Required: false
+    - zabbix
+Scaling:
+  Min: 1
+  Max: -1
 
