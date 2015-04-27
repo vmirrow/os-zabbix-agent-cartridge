@@ -9,6 +9,7 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: mirrow
 License: Apache
 Categories:
+  - service
   - embedded
   - plugin
 Provides:
