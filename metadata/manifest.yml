@@ -16,8 +16,8 @@ Categories:
   - zabbix
 Provides:
   - zabbix_agent
-Requires:   
-  - cron
+#Requires:   
+#  - cron
 Cart-Data:
 - Key: ZABBIX_SERVER_IP
   Type: environment
