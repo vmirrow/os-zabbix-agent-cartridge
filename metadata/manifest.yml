@@ -1,6 +1,5 @@
 Name: zabbix-agent
 Cartridge-Short-Name: zabbix_agent
-Architecture: noarch
 Display-Name: Zabbix Agent
 Description: Zabbix Agent - agent of zabbix monitoring server
 Version: "2.0.8"
@@ -9,14 +8,20 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: mirrow
 License: Apache
 Categories:
-  - embedded
   - plugin
+  - embedded
   - zabbix
 Provides:
   - zabbix_agent
-  - zabbix_agent-2.0.8
 Requires:   
   - cron
+Cart-Data:
+- Key: ZABBIX_SERVER_IP
+  Type: environment
+  Description: This is the host name or the IP address of the Zabbix server.
+- Key: ZABBIX_SERVER_PORT
+  Type: environment
+  Description: This is the port of the Zabbix server. 
 Publishes:
 Subscribes:
 GroupOverrides:
@@ -26,4 +31,4 @@ GroupOverrides:
 Scaling:
   Min: 1
   Max: -1
-
+Install-Build-Required: false
