@@ -7,8 +7,8 @@ Versions:
 - '2.0.8'
 License: Apache
 Vendor: Red Hat
-#Source-Url: https://github.com/vmirrow/os-zabbix-agent-cartridge.git
-Cartridge-Version: 0.0.1
+Source-Url: https://github.com/vmirrow/os-zabbix-agent-cartridge.git
+Cartridge-Version: 0.0.2
 Cartridge-Vendor: mirrow
 Categories:
   - plugin
